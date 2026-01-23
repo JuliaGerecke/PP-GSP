@@ -12,9 +12,8 @@ Even though the algorithm relies on truncations to remain computationally feasib
 The ansatz we use to approximate the ground state is ADAPT-VQE, a hybrid quantum-classical algorithm which we have adapted to work fully classically. 
 To enable scaling to larger system sizes, we employ an operator-pool tiling strategy. This takes operators relevant for expressing the ground state of small systems and extends them to match the larger system size.
 We focus on spin Hamiltonians in 1D and 2D and validate approximate ground states by re-evaluating them at stricter truncation settings and by checking symmetry-based observables. 
-We benchmarked the accuracy of our results against exact solutions, DMRG, or NQS. We further examine the scalability of our approach by considering time and memory behaviour in interplay 
-with the accuracy of specific implementation decisions, such as the optimization procedure, the operator tile size, as well as threading options on high-performance computers.
-
+We benchmark the accuracy of our results against exact solutions where available, as well as against state-of-the-art numerical methods such as Density Matrix Renormalization Group and Neural Quantum States. 
+We further examine the scalability of our approach by considering time and memory behaviour in interplay with the accuracy of specific implementation decisions, such as the optimization procedure, the operator tile size, as well as threading options on high-performance computers.
 
 ## Features
 
